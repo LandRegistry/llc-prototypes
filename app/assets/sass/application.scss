@@ -59,11 +59,11 @@ $path: "/public/images/";
 
 // search icon
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-    #search-button {
+    .search-button {
         line-height: 34px;
     }
 }
-#search-button {
+.search-button {
   background-size: 52.5px 35px;
   background-position: 115% 50%;
   box-sizing: border-box;
@@ -76,5 +76,10 @@ $path: "/public/images/";
   border: 0;
   position: relative;
   right: 4px;
+}
 
+// ugly hack
+.autocomplete-search {
+  position: relative;
+  top: 11px;
 }
