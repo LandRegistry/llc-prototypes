@@ -83,3 +83,103 @@ $path: "/public/images/";
   position: relative;
   top: 11px;
 }
+
+// map stuff
+#map { 
+    height: 500px;
+    width: 960px;
+    position: relative;
+    left: -120px;
+ }
+
+#map .ol-zoom .ol-zoom-out {
+    background:rgba(51,122,183,.8);
+    margin-top: 204px;
+}
+
+#map .ol-zoom .ol-zoom-in {
+    background:rgba(51,122,183,.8);
+}
+
+#map .ol-zoomslider {
+    background-color: transparent;
+    top: 2.3em;
+}
+
+#map .ol-zoomslider-thumb {
+    background:rgba(51,122,183,.8);
+}
+
+#map .ol-mouse-position {
+    background:rgba(51,122,183,.8);
+    border-radius: 10px;
+    border-color: grey;
+    padding: 5px;
+    font: 12px arial, bold;
+    color: white;
+    top: auto;
+    bottom: 0.5em;
+    left: 0.5em;
+    right: auto;
+}
+
+#map .ol-nav-buttons {
+    background:rgba(51,122,183,.3);
+    top: auto;
+    bottom: 0.5em;
+    left: 0.5em;
+    right: auto;
+}
+
+#map-nav {
+    position: relative;
+}
+
+.postcode-search {
+    position: absolute;
+    top: 0.5em;
+    bottom: auto;
+    left: -2em;
+    right: auto;
+    opacity: 0.9;
+}
+
+.postcode-search .btn {
+    background-color: rgba(51,122,183,.8);
+    color: #fff;
+}
+
+.postcode-search .btn:hover {
+    background-color: rgba(51,122,183,.9);
+}
+
+#postcode-error {
+    color: red;
+    background-color: rgba(255,255,255,.6);
+}
+
+.up-nav-button {
+    margin: auto;
+    width: 38%;
+}
+
+.nav-buttons {
+    margin: auto;
+}
+
+.custom-draw {
+    top: 0.5em;
+    right: 0.5em;
+    opacity: 0.9;
+}
+
+#ol-tool-tip {
+    background:rgba(51,122,183,.8);
+    border-radius: 10px;
+    border-color: grey;
+    padding: 5px;
+    font: 12px arial, bold;
+    color: white;
+    top: 5.5em;
+    right: 0.5em;
+}
