@@ -25,4 +25,11 @@ $(document).ready(function () {
   // to toggle hidden content
   var showHideContent = new GOVUK.ShowHideContent()
   showHideContent.init()
+
+  // horizontal carousel script
+  $(".control li").click(function() {
+    var charge = $(this).html().toLowerCase()
+    $(".result").load("lists/" + charge)
+    return false
+  });
 })
