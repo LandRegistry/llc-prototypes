@@ -181,3 +181,13 @@ $path: "/public/images/";
     top: 7em;
     right: 0.5em;
 }
+
+// reason page layout
+.form-group-reason {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: column wrap;
+  align-content: stretch;
+  height: 300px;
+}
