@@ -32,4 +32,9 @@ $(document).ready(function () {
     $(".result").load("lists/" + charge)
     return false
   });
+
+  $("#search-button").click(function() {
+    var searchItem = $("#searchTerm").val()
+    sessionStorage.setItem("searchItem", searchItem)
+  })
 })
