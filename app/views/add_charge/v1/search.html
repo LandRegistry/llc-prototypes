@@ -13,8 +13,29 @@ Find where your charge is
 	</div>
 	<!-- main content starts -->
 	<div class="grid-row">
-		<div class="column-full">
+		<div class="column-two-thirds">
 			<h1 class="heading-large">Location</h1>
+			<p>Use postcode, Unique Property Reference Number (UPRN) or place name to show us where to find your charge.</p>
+			<form action="#" method="POST">
+				<div class="form-group">
+					<fieldset>
+						<legend class="visuallyhidden">Where is the charge?</legend>
+						<div class="form-group spacing-bottom-half">
+							<label class="form-label" for="search-term">
+								<strong>Search by postcode, place name or UPRN</strong>
+							</label>
+							<span class="form-hint">For example SW1A 2AA or Manchester</span>
+							<input class="form-control search-field" id="search-term" name="search-term" type="text" value="" autofocus="autofocus">
+							<input id="search-button" class="submit" type="submit" value="Search"><br><br>
+							<ul class="list list-bullet">
+								<li><a href="#">Search using a map</a></li>
+								<li>Search using the Royal Mail's <a href="http://www.royalmail.com/find-a-postcode">postcode finder</a></li>
+								<li>Ask the person who created the charge</li>
+							</ul>
+						</div>
+					</fieldset>
+				</div>
+			</form>
 		</div>
 	</div>
 </main>
