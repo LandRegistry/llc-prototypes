@@ -28,3 +28,31 @@ $path: "/public/images/";
 }
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+// Horizontal carousel styles
+.browse ul li a,
+.control ul li a,
+.result_1 ul li a {
+  color: #005ea5;
+  text-decoration: none;
+  line-height: 1.5;
+  display: block;
+  padding: 10px 5px;
+  cursor: pointer;
+}
+
+.control ul a::after {
+  position: relative;
+  top: 50%;
+  margin-top: -2px;
+  right: 10px;
+  margin-left: 10px;
+  float: right;
+  content: "\203A";
+}
+
+.control ul li a:hover,
+.result_1 ul li a:hover,
+.browse ul li a:hover {
+  background: #F8F8F8;
+}
