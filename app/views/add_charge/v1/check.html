@@ -127,6 +127,71 @@ Check your application
 								</a>
 							</td>
 						</tr>
+						<tr>
+							<td>
+								Particulars on acquired land
+							</td>
+							<td>
+								<span class="particularsA">Not applicable</span><br>
+							</td>
+							<td class="change-answer">
+								<a class="edit" href="#">
+									Change <span class="visuallyhidden">Particulars on acquired land</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Particulars of relevant interest
+							</td>
+							<td>
+								<span class="particularsB">Not applicable</span><br>
+							</td>
+							<td class="change-answer">
+								<a class="edit" href="#">
+									Change <span class="visuallyhidden">Particulars of relevant interest</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Compensation
+							</td>
+							<td>
+								<span class="compensation">Not applicable</span><br>
+							</td>
+							<td class="change-answer">
+								<a class="edit" href="#">
+									Change <span class="visuallyhidden">Compensation</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Amount
+							</td>
+							<td>
+								<span class="amount">Not applicable</span><br>
+							</td>
+							<td class="change-answer">
+								<a class="edit" href="#">
+									Change <span class="visuallyhidden">Amount</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Rate of interest
+							</td>
+							<td>
+								<span class="interest">Not applicable</span><br>
+							</td>
+							<td class="change-answer">
+								<a class="edit" href="#">
+									Change <span class="visuallyhidden">Rate of interest</span>
+								</a>
+							</td>
+						</tr>
 
 					</tbody>
 				</table>
@@ -160,7 +225,26 @@ var endYearSelected = sessionStorage.getItem("endYear")
 var expirationTermSelected = sessionStorage.getItem("expirationTerm")
 var noExpireSelected = sessionStorage.getItem("noExpire")
 var reasonSelected = sessionStorage.getItem("reason")
-console.log(reasonSelected)
+var particularsASelected = sessionStorage.getItem("particularsA")
+if (particularsASelected === null) {
+	particularsASelected = "Not applicable"
+}
+var particularsBSelected = sessionStorage.getItem("particularsB")
+if (particularsBSelected === null) {
+	particularsBSelected = "Not applicable"
+}
+var compensationSelected = sessionStorage.getItem("compensation")
+if (compensationSelected === null) {
+	compensationSelected = "Not applicable"
+}
+var interestSelected = sessionStorage.getItem("interest")
+if (interestSelected === null) {
+	interestSelected = "Not applicable"
+}
+var amountSelected = sessionStorage.getItem("amount")
+if (amountSelected === null) {
+	amountSelected = "Not applicable"
+}
 
 </script>
 {% endblock %}

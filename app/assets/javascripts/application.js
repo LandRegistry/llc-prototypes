@@ -104,6 +104,32 @@ $(document).ready(function () {
     }
   })
 
+  // land compensation 6a stuff
+  $(".particularsA-button").click(function() {
+    var particularsA = $("#particularsA").val()
+    sessionStorage.setItem("particularsA", particularsA)
+  })
+
+  // land compendation 6b stuff
+  $(".particularsB-button").click(function() {
+    var particularsB = $("#particularsB").val()
+    sessionStorage.setItem("particularsB", particularsB)
+
+    var compensation = $("#compensation").val()
+    sessionStorage.setItem("compensation", compensation)
+  })
+
+  // specific financial stuff
+  $(".specific-financial-button").click(function() {
+    var amount = $("#amount").val()
+    sessionStorage.setItem("amount", amount)
+
+    var interest = $("#interest").click(function() {
+      var interest = $("#interest").val()
+      sessionStorage.setItem("interest", interest)
+    })
+  })
+
   // reason
   $(".reason-button").click(function() {
     $(".selection-button-checkbox").each(function() {
@@ -132,6 +158,11 @@ $(document).ready(function () {
   $(".expirationTerm").html(expirationTermSelected)
   $(".noExpire").html(noExpireSelected)
   $(".reason").html(reasonSelected)
+  $(".particularsA").html(particularsASelected)
+  $(".particularsB").html(particularsBSelected)
+  $(".compensation").html(compensationSelected)
+  $(".amount").html(amountSelected)
+  $(".interest").html(interestSelected)
 
   // map stuff
   var geoserver = 'http://192.168.250.122:8080/geoserver'
