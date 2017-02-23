@@ -34,7 +34,7 @@ Check your application
 								Charge type
 							</td>
 							<td>
-								<span class="instrument_result"></span><br>
+								<span class="reason"></span><br>
 							</td>
 							<td class="change-answer">
 								<a id="edit" href="#">
@@ -60,7 +60,7 @@ Check your application
 								Location
 							</td>
 							<td>
-								<span class="post_code"></span><br><br>
+								<span class="location"></span><br><br>
 								<img src="#" style="width:388px;height:317px;">
 							</td>
 							<td class="change-answer">
@@ -74,7 +74,7 @@ Check your application
 								Description
 							</td>
 							<td>
-								<span class="description"></span><br>
+								<span class="moreInformation"></span><br>
 							</td>
 							<td class="change-answer">
 								<a class="edit" href="#">
@@ -87,7 +87,10 @@ Check your application
 								Additional information
 							</td>
 							<td>
-								<span class="further_info"></span><br>
+								<span class="address"></span><br>
+								<span class="website"></span><br>
+								<span class="phoneNumber"></span><br>
+								<span class="email"></span><br>
 								<span class="reference"></span><br>
 							</td>
 							<td class="change-answer">
@@ -101,7 +104,7 @@ Check your application
 								Start date
 							</td>
 							<td>
-								<span class="doc-day-start"></span>/<span class="doc-month-start"></span>/<span class="doc-year-start"></span><br>
+								<span class="startDay"></span>/<span class="startMonth"></span>/<span class="startYear"></span><br>
 							</td>
 							<td class="change-answer">
 								<a class="edit" href="#">
@@ -114,7 +117,9 @@ Check your application
 								Expiry
 							</td>
 							<td>
-								<span class="expiry_date"></span><br>
+								<span class="endDay"></span>/<span class="endMonth"></span>/<span class="endYear"></span><br>
+								<span class="expirationTerm"></span><br>
+								<span class="noExpire"></span><br>
 							</td>
 							<td class="change-answer">
 								<a class="edit" href="#">
@@ -136,6 +141,28 @@ Check your application
 		</div>
 	</div>
 </main>
+
+<script>
+var legislationSelected = sessionStorage.getItem("legislation")
+var locationSelected = sessionStorage.getItem("location")
+var moreInformationSelected = sessionStorage.getItem("moreInformation")
+var addressSelected = sessionStorage.getItem("address")
+var websiteSelected = sessionStorage.getItem("website")
+var phoneNumberSelected = sessionStorage.getItem("phoneNumber")
+var emailSelected = sessionStorage.getItem("email")
+var referenceSelected = sessionStorage.getItem("reference")
+var startDaySelected = sessionStorage.getItem("startDay")
+var startMonthSelected = sessionStorage.getItem("startMonth")
+var startYearSelected = sessionStorage.getItem("startYear")
+var endDaySelected = sessionStorage.getItem("endDay")
+var endMonthSelected = sessionStorage.getItem("endMonth")
+var endYearSelected = sessionStorage.getItem("endYear")
+var expirationTermSelected = sessionStorage.getItem("expirationTerm")
+var noExpireSelected = sessionStorage.getItem("noExpire")
+var reasonSelected = sessionStorage.getItem("reason")
+console.log(reasonSelected)
+
+</script>
 {% endblock %}
 
 
