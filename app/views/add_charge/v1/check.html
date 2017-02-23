@@ -1,0 +1,141 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Check your application
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+	<!-- alpha banner -->
+	<div class="phase-banner">
+		<p><strong class="phase-tag">alpha</strong></p>
+	</div>
+	<!-- main content starts -->
+	<div class="grid-row">
+		<div class="column-full">
+			<h1 class="heading-large">Check your application</h1>
+			<p class="text">By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
+			<form action="#" method="GET">
+				<table class="check-your-answers">
+
+					<thead>
+						<tr>
+							<th colspan="2">
+							</th>
+							<th>
+							</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>
+								Charge type
+							</td>
+							<td>
+								<span class="instrument_result"></span><br>
+							</td>
+							<td class="change-answer">
+								<a id="edit" href="#">
+									Change <span class="visuallyhidden">Charge type</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Legislation
+							</td>
+							<td>
+								<span class="legislation"></span>
+							</td>
+							<td class="change-answer">
+								<a class="edit" href="#">
+									Change <span class="visuallyhidden">Legislation</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Location
+							</td>
+							<td>
+								<span class="post_code"></span><br><br>
+								<img src="#" style="width:388px;height:317px;">
+							</td>
+							<td class="change-answer">
+								<a class="edit" href="#">
+									Change <span class="visuallyhidden">Location</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Description
+							</td>
+							<td>
+								<span class="description"></span><br>
+							</td>
+							<td class="change-answer">
+								<a class="edit" href="#">
+									Change <span class="visuallyhidden">Description</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Additional information
+							</td>
+							<td>
+								<span class="further_info"></span><br>
+								<span class="reference"></span><br>
+							</td>
+							<td class="change-answer">
+								<a class="edit" href="#">
+									Change <span class="visuallyhidden">Description</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Start date
+							</td>
+							<td>
+								<span class="doc-day-start"></span>/<span class="doc-month-start"></span>/<span class="doc-year-start"></span><br>
+							</td>
+							<td class="change-answer">
+								<a class="edit" href="#">
+									Change <span class="visuallyhidden">Instrument</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Expiry
+							</td>
+							<td>
+								<span class="expiry_date"></span><br>
+							</td>
+							<td class="change-answer">
+								<a class="edit" href="#">
+									Change <span class="visuallyhidden">expiry</span>
+								</a>
+							</td>
+						</tr>
+
+					</tbody>
+				</table>
+
+				<p></p>
+
+
+				<p>
+					<a class="button" href="#" role="button">Register</a>
+				</p>
+			</form>
+		</div>
+	</div>
+</main>
+{% endblock %}
+
+
