@@ -54,6 +54,20 @@ Add additional information about the charge
 	</div>
 </main>
 
+<script>
+var whichLegislation = sessionStorage.getItem("legislation")
+if (whichLegislation === 's.8(4) Land Compensation Act 1973') {
+	var linkToChange = document.querySelector(".additional-information-button")
+	linkToChange.setAttribute("href", "land_compensation_6a")
+} else if (whichLegislation === 's.52(8) Land Compensation Act 1973') {
+	var linkToChange = document.querySelector(".additional-information-button")
+	linkToChange.setAttribute("href", "land_compensation_6b")
+} else if (whichLegislation === 'Various' || whichLegislation === 's.8 Coast Protection Act' || whichLegislation === 'Part 8 Regulation 66 Community Infrastructure Levy Regulations 2010' || whichLegislation === 'Part 8 Regulation 66 Community Infrastructure Levy Regulations 2011' || whichLegislation === 's.178(1)(b) Town and Country Planning Act 1990' || whichLegislation === 's.42(1) Planning (Listed Buildings and Conservation Areas) Act 1990' || whichLegislation === 's.107 Building Act 1984' || whichLegislation === 'Highways Act 1980 (various sections)' || whichLegislation === 's.278(8) Highways Act 1980' || whichLegislation === 's.106 Town and Country Planning Act 1990' || whichLegislation === 'Part 8 Regulation 66 Community Infrastructure Levy Regulations 2011' || whichLegislation === 's.52(2) Housing Grants Construction and Regeneration Act 1996' || whichLegislation === 's.156(a) Housing Act 1985s.36(a) Housing Act 1985' || whichLegislation === 'New Towns Act 1981:-- Order by Secretary of State- s.10 or s.11 (CPO by a Development Corporation)' || whichLegislation === 's.11(1) Opencast Coal Act 1958') {
+	var linkToChange = document.querySelector(".additional-information-button")
+	linkToChange.setAttribute("href", "specific_financial")
+}
+</script>
+
 {% endblock %}
 
 
