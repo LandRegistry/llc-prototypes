@@ -59,9 +59,13 @@ $path: "/public/images/";
 
 // search icon
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-    .search-button {
-        line-height: 34px;
-    }
+  .search-button {
+    line-height: 34px;
+  }
+  .autocomplete-search {
+    position: relative;
+    top: 11px;
+  }
 }
 .search-button {
   background-size: 52.5px 35px;
@@ -78,108 +82,102 @@ $path: "/public/images/";
   right: 4px;
 }
 
-// ugly hack
-.autocomplete-search {
-  position: relative;
-  top: 11px;
-}
-
 // map stuff
 #map { 
-    height: 500px;
-    width: 960px;
-    position: relative;
- }
+  height: 500px;
+  width: 960px;
+  position: relative;
+}
 
 #map .ol-zoom .ol-zoom-out {
-    background:rgba(51,122,183,.8);
-    margin-top: 204px;
+  background:rgba(51,122,183,.8);
+  margin-top: 204px;
 }
 
 #map .ol-zoom .ol-zoom-in {
-    background:rgba(51,122,183,.8);
+  background:rgba(51,122,183,.8);
 }
 
 #map .ol-zoomslider {
-    background-color: transparent;
-    top: 2.3em;
+  background-color: transparent;
+  top: 2.3em;
 }
 
 #map .ol-zoomslider-thumb {
-    background:rgba(51,122,183,.8);
+  background:rgba(51,122,183,.8);
 }
 
 #map .ol-mouse-position {
-    background:rgba(51,122,183,.8);
-    border-radius: 10px;
-    border-color: grey;
-    padding: 5px;
-    font: 12px arial, bold;
-    color: white;
-    top: auto;
-    bottom: 0.5em;
-    left: 0.5em;
-    right: auto;
+  background:rgba(51,122,183,.8);
+  border-radius: 10px;
+  border-color: grey;
+  padding: 5px;
+  font: 12px arial, bold;
+  color: white;
+  top: auto;
+  bottom: 0.5em;
+  left: 0.5em;
+  right: auto;
 }
 
 #map .ol-nav-buttons {
-    background:rgba(51,122,183,.3);
-    top: auto;
-    bottom: 0.5em;
-    left: 0.5em;
-    right: auto;
+  background:rgba(51,122,183,.3);
+  top: auto;
+  bottom: 0.5em;
+  left: 0.5em;
+  right: auto;
 }
 
 #map-nav {
-    position: relative;
+  position: relative;
 }
 
 .postcode-search {
-    position: absolute;
-    top: 0.5em;
-    bottom: auto;
-    right: auto;
-    opacity: 0.9;
+  position: absolute;
+  top: 0.5em;
+  bottom: auto;
+  right: auto;
+  opacity: 0.9;
 }
 
 .postcode-search .btn {
-    background-color: rgba(51,122,183,.8);
-    color: #fff;
+  background-color: rgba(51,122,183,.8);
+  color: #fff;
 }
 
 .postcode-search .btn:hover {
-    background-color: rgba(51,122,183,.9);
+  background-color: rgba(51,122,183,.9);
 }
 
 #postcode-error {
-    color: red;
-    background-color: rgba(255,255,255,.6);
+  color: red;
+  background-color: rgba(255,255,255,.6);
 }
 
 .up-nav-button {
-    margin: auto;
-    width: 38%;
+  margin: auto;
+  width: 38%;
 }
 
 .nav-buttons {
-    margin: auto;
+  margin: auto;
 }
 
 .custom-draw {
-    top: 0.5em;
-    right: 0.5em;
-    opacity: 0.9;
+  top: 0.5em;
+  right: 0.5em;
+  opacity: 0.9;
 }
 
 #ol-tool-tip {
-    background:rgba(51,122,183,.8);
-    border-radius: 10px;
-    border-color: grey;
-    padding: 5px;
-    font: 12px arial, bold;
-    color: white;
-    top: 7em;
-    right: 0.5em;
+  background:rgba(51,122,183,.8);
+  border-radius: 10px;
+  border-color: grey;
+  padding: 5px;
+  font: 12px arial, bold;
+  color: white;
+  top: 7em;
+  right: 0.5em;
 }
 
 // reason page layout
