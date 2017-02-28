@@ -67,7 +67,8 @@ $path: "/public/images/";
     top: 11px;
   }
 }
-.search-button {
+.search-button,
+.search-button-map {
   background-size: 52.5px 35px;
   background-position: 115% 50%;
   box-sizing: border-box;
@@ -188,4 +189,11 @@ $path: "/public/images/";
   flex-flow: column wrap;
   align-content: stretch;
   height: 300px;
+}
+
+// maintain llc stuff
+.search-button-map {
+  position: relative;
+  bottom: 36px;
+  left: 450px;
 }
