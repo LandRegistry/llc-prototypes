@@ -5,7 +5,7 @@ Search for a charge or browse for a charge on the map
 {% endblock %}
 
 {% block content %}
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
 <main id="content" role="main">
 	<!-- alpha banner -->
 	<div class="phase-banner">
@@ -13,9 +13,25 @@ Search for a charge or browse for a charge on the map
 	</div>
 	<!-- main content starts -->
 	<div class="grid-row">
-		<div class="column-full">
+		<div class="column-two-thirds">
 			<h1 class="heading-large">Find a Local Land Charge</h1>
+      <form action="search.html" method="GET">
+        <div class="form-group">
+          <fieldset>
+            <legend class="visuallyhidden">Which law relates to your charge?</legend>
+            <div class="form-group spacing-bottom-half">
+              <label class="form-label" for="legislation">
+                <h2 class="heading-medium">Legislation</h2>
+              </label>
+              <span class="form-hint">Start typing the legislation you are looking for and select it from the list</span>
+              <input class="form-control search-field" id="maintain-map-search" name="maintain-map-search" type="text" value="" autofocus="autofocus">
+              <input class="search-button submit maintain-map-search-button" type="submit" name="maintain-map-search" value=""><br><br>
+            </div>
+          </fieldset>
+        </div>
+      </form>
       <p>The local land charges in {{ searchedItem }} is shown on the map below. Click on the extent or on an item on the list to see the details of the charge.</p>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
       <div>
         <div class="container maintain-llc-map">
          <div id="map-nav" class="form-group">
@@ -33,11 +49,14 @@ Search for a charge or browse for a charge on the map
         </div>
         <div id="openlayersForm" class="form-inline custom-draw ol-control">
          <div id="copy-from" class="btn-group" data-toggle="buttons">
-          <label id="copyLabel" class="btn btn-primary btn-sm disabled-btn" title="Copy from" alt="Copy from">
-           <input type="radio" name="type" id="copy" value="Copy" autocomplete="off" disabled="disabled"> <p class="map-button-label"><span id="copyIcon" class="glyphicon glyphicon-duplicate icon-size" aria-hidden="true" title="Copy from" alt="Copy from"></span></p><p class="map-button-label">Copy</p>
-         </label>
-       </div>
-       <div class="btn-group" data-toggle="buttons">
+
+          <label id="copyLabel" class="btn btn-primary btn-sm active" title="Copy from" alt="Copy from">
+           <input type="radio" name="type" id="copy" value="Copy" autocomplete="off" disabled="disabled"> 
+           <p class="map-button-label"><span id="copyIcon" class="glyphicon glyphicon-duplicate icon-size" aria-hidden="true" title="Copy from" alt="Copy from"></span></p>
+           <p class="map-button-label">Copy</p>
+          </label>
+         </div>
+         <div class="btn-group" data-toggle="buttons">
         <label id="pointLabel" class="btn btn-primary btn-sm active" title="Draw a point" alt="Draw a point">
          <input type="radio" name="type" id="point" value="Point" autocomplete="off" checked> <p class="map-button-label"><span class="glyphicon glyphicon-map-marker icon-size" aria-hidden="true" title="Draw a point" alt="Draw a point"></span></p><p class="map-button-label">Point</p>
        </label>
@@ -80,7 +99,6 @@ Search for a charge or browse for a charge on the map
 </div>
 </div>
 
-<div id="ol-tool-tip" class="ol-control">Click to draw a point.</div>
 
 <!-- <form onsubmit="lookupPostcode();return false">
  <div id="postcode-search" class="form-inline postcode-search">

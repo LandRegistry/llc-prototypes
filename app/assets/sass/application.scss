@@ -62,7 +62,8 @@ $path: "/public/images/";
   .search-button {
     line-height: 34px;
   }
-  .autocomplete-search {
+  .autocomplete-search,
+  .maintain-map-search-button {
     position: relative;
     top: 11px;
   }
@@ -192,8 +193,8 @@ $path: "/public/images/";
 }
 
 // maintain llc stuff
-.search-button-map {
-  position: relative;
-  bottom: 36px;
-  left: 450px;
+#maintain-map-search {
+  border: 2px solid black;
+  width: 65%;
+  display: inline !important;
 }
