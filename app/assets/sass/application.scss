@@ -203,7 +203,7 @@ $path: "/public/images/";
   width: 55% !important;
   /* outline: 1px solid red;*/
   position: relative;
-  left: -27px;
+  left: -12px;
 
   & canvas {
     width: 55%;
@@ -212,6 +212,12 @@ $path: "/public/images/";
   & .ol-zoom {
     top: 100px;
   }
+}
+
+.filter .form-group{
+  background-color: #F8F8F8;
+  width: 100%;
+  padding: 0 1em;
 }
 
 .filter label {
@@ -257,4 +263,17 @@ $path: "/public/images/";
   height: 7px !important;
   position: relative;
   left: 3px !important;
+}
+
+.result-count {
+  margin-top: 1em;
+}
+
+.charge-list-item {
+  border-top: 1px solid #DEE0E2;
+  cursor: pointer !important;
+
+  &:last-child {
+    border-bottom: 1px solid #DEE0E2;
+  }
 }
