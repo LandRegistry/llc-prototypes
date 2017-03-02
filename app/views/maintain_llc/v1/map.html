@@ -14,23 +14,22 @@ Search for a charge or browse for a charge on the map
 	<!-- main content starts -->
 	<div class="grid-row">
 		<div class="column-two-thirds">
-			<h1 class="heading-large">Find a Local Land Charge</h1>
-      <form action="search.html" method="GET">
+			<h1 class="heading-large">Enter postcode or charge ID to find a charge</h1>
+      <p>You can also search again using the map.</p>
+      <form action="#" method="GET">
         <div class="form-group">
           <fieldset>
-            <legend class="visuallyhidden">Which law relates to your charge?</legend>
+            <legend class="visuallyhidden">Enter postcode or charge ID to find a charge</legend>
             <div class="form-group spacing-bottom-half">
               <label class="form-label" for="legislation">
-                <h2 class="heading-medium">Legislation</h2>
               </label>
-              <span class="form-hint">Start typing the legislation you are looking for and select it from the list</span>
               <input class="form-control search-field" id="maintain-map-search" name="maintain-map-search" type="text" value="" autofocus="autofocus">
               <input class="search-button submit maintain-map-search-button" type="submit" name="maintain-map-search" value=""><br><br>
             </div>
           </fieldset>
         </div>
       </form>
-      <p>The local land charges in {{ searchedItem }} is shown on the map below. Click on the extent or on an item on the list to see the details of the charge.</p>
+      <span class="form-hint">Click on the extent or on an item on the list to see the details of the charge.</span>
       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
       <div>
         <div class="container maintain-llc-map">
