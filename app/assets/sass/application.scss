@@ -198,3 +198,63 @@ $path: "/public/images/";
   width: 65%;
   display: inline !important;
 }
+
+.maintain-llc-map {
+  width: 55% !important;
+  /* outline: 1px solid red;*/
+  position: relative;
+  left: -27px;
+
+  & canvas {
+    width: 55%;
+  }
+
+  & .ol-zoom {
+    top: 100px;
+  }
+}
+
+.filter label {
+  padding-bottom: 1em;
+  padding-left: 1.5em;
+}
+
+.toggle {
+  width: 100% !important;
+  margin-top: 1em;
+}
+
+.select-all {
+  padding-bottom: 0 !important;
+}
+
+.select-controls {
+  margin-bottom: 0.5em;
+  position: relative;
+  top: 1em;
+  padding-left: 300px;
+
+  & a {
+    position: relative;
+    top: 0.4em;
+    text-decoration: underline;
+  }
+}
+
+.filter-heading {
+  float: left;
+}
+
+.filter .selection-button-checkbox::before {
+  width: 14px !important;
+  height: 14px !important;
+  position: relative;
+  top: 7px !important;
+}
+
+.filter .selection-button-checkbox::after {
+  width: 7px !important;
+  height: 7px !important;
+  position: relative;
+  left: 3px !important;
+}
