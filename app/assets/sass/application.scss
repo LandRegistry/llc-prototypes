@@ -130,9 +130,9 @@ $path: "/public/images/";
   right: auto;
 }
 
-#map-nav {
+/*#map-nav {
   position: relative;
-}
+}*/
 
 .postcode-search {
   position: absolute;
@@ -203,7 +203,7 @@ $path: "/public/images/";
   width: 55% !important;
   /* outline: 1px solid red;*/
   position: relative;
-  left: -12px;
+  left: -22px;
 
   & canvas {
     width: 55%;
@@ -271,9 +271,27 @@ $path: "/public/images/";
 
 .charge-list-item {
   border-top: 1px solid #DEE0E2;
-  cursor: pointer !important;
+
+  & h3 {
+    margin-top: 0.5em;
+  }
 
   &:last-child {
     border-bottom: 1px solid #DEE0E2;
   }
+
+  & a {
+    color: inherit;
+    cursor: pointer;
+    display: block;
+
+    &:hover {
+      background-color: #F8F8F8;
+      color: inherit;
+    }
+  }
+}
+
+.charge-list {
+  z-index: 100000;
 }

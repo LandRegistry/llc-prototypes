@@ -83,7 +83,7 @@ Search for a charge or browse for a charge on the map
       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
       <div class="column-two-thirds">
         <div class="container">
-          <div id="map-nav" class="form-group">
+          <div id="map-nav" class="maintain-map form-group">
             <div id="map" class="maintain-llc-map"></div>
             <div id="nav-buttons" class="ol-nav-buttons ol-control">
 
@@ -166,16 +166,20 @@ Search for a charge or browse for a charge on the map
           </form>
         </div>
       </div>
-      <div class="column-one-third">
+      <div class="column-one-third charge-list">
         <h2 class="heading-medium">Local Land Charges in this area</h2>
         <p class="result-count">There are 2 charges in this area</p>
         <div class="charge-list-item">
-          <h3 class="heading-small">Specific financial</h3>
-          <p class="font-xsmall"><span class="bold-xsmall">ID:</span> LR-ABC12345</p>
+        <a href="specific-financial">
+            <h3 class="heading-small">Specific financial</h3>
+            <p class="font-xsmall"><span class="bold-xsmall">ID:</span> LR-ABC12345</p>
+          </a>
         </div>
         <div class="charge-list-item">
-          <h3 class="heading-small">Infrastructure</h3>
-          <p class="font-xsmall"><span class="bold-xsmall">ID:</span> LR-DEF67890</p>
+          <a href="infrastructure">
+            <h3 class="heading-small">Infrastructure</h3>
+            <p class="font-xsmall"><span class="bold-xsmall">ID:</span> LR-DEF67890</p>
+          </a>
         </div>
       </div>
     </div>
