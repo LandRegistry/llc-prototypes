@@ -139,6 +139,70 @@ $(document).ready(function () {
       }
     })
   })
+  // maintain address storage
+  $(".maintain-map-search-button").click(function() {
+    var maintainMapAddress = $("#maintain-map-search").val()
+    sessionStorage.setItem("maintainMapAddress", maintainMapAddress)
+  })
+
+
+
+  // edit charge
+  $(".edit-charge").click(function() {
+    var editChargeType = $("#charge-type-text").html()
+    var editLegislation = $("#legislation-text").html()
+    var editLocation = $("#location-text").html()
+    var editLocationInformation = $("#location-information-text").html()
+    var editFurtherInformation = $("#further-information-text").html()
+    var editReference = $("#reference-text").html()
+    var editOa = $("#oa-text").html()
+    var editSource = $("#source-text").html()
+    var editDate = $("#date-text").html()
+    var editExpiry = $("#expiry-text").html()
+    /*var editRetainedLand = $("#retained-land-text").html()
+    var editParticularsLand = $("#particulars-land-text").html()
+    var editParticularsInterest = $("#particulars-interest-text").html()
+    var editCompensation = $("#compensation-text").html()
+    var editAmount = $("#amount-text").html()
+    var editInterest = $("#interest-text").html()*/
+
+    sessionStorage.setItem("editChargeType", editChargeType)
+    sessionStorage.setItem("editLegislation", editLegislation)
+    sessionStorage.setItem("editLocation", editLocation)
+    sessionStorage.setItem("editLocationInformation", editLocationInformation)
+    sessionStorage.setItem("editFurtherInformation", editFurtherInformation)
+    sessionStorage.setItem("editReference", editReference)
+    sessionStorage.setItem("editOa", editOa)
+    sessionStorage.setItem("editSource", editSource)
+    sessionStorage.setItem("editDate", editDate)
+    sessionStorage.setItem("editExpiry", editExpiry)
+    /*sessionStorage.setItem("editRetainedLand", editRetainedLand)
+    sessionStorage.setItem("editParticularsLand", editParticularsLand)
+    sessionStorage.setItem("editParticularsInterest", editParticularsInterest)
+    sessionStorage.setItem("editCompensation", editCompensation)
+    sessionStorage.setItem("editAmount", editAmount)
+    sessionStorage.setItem("editInterest", editInterest)*/
+  })
+
+  $("#edit-charge-type-field").val(editChargeTypeValue)
+  $("#edit-legislation-field").val(editLegislationValue)
+  $("#edit-location-field").val(editLocationValue)
+  $("#edit-location-information-field").val(editLocationInformationValue)
+  $("#edit-further-information-field").val(editFurtherInformationValue)
+  $("#edit-reference-field").val(editReferenceValue)
+  $("#edit-oa-field").val(editOaValue)
+  $("#edit-source-field").val(editSourceValue)
+  $("#edit-date-field").val(editDateValue)
+  $("#edit-expiry-field").val(editLExpiryValue)
+  /*$("#edit-retained-land-field").val(editRetainedLandValue)
+  $("#edit-particulars-land-field").val(editParticularsLandValue)
+  $("#edit-particulars-interest-field").val(editParticularsInterestValue)
+  $("#edit-compensation-field").val(editCompensationValue)
+  $("#edit-amount-field").val(editAmountValue)
+  $("#edit-interest-field").val(editInterestValue)*/
+
+
+
 
   // replacing values
   $(".legislation").html(legislationSelected)
@@ -165,7 +229,7 @@ $(document).ready(function () {
   $(".interest").html(interestSelected)
 
 
-
+  $(".maintainMapAddressItem").html(maintainMapAddressSelected)
   // map stuff
   var geoserver = 'http://192.168.250.122:8080/geoserver'
   var longitude = -0.09;

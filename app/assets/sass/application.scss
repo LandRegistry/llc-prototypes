@@ -67,6 +67,9 @@ $path: "/public/images/";
     position: relative;
     top: 11px;
   }
+  .maintain-map-search-button {
+    top: 13px;
+  }
 }
 .search-button,
 .search-button-map {
@@ -195,8 +198,9 @@ $path: "/public/images/";
 // maintain llc stuff
 #maintain-map-search {
   border: 2px solid black;
-  width: 65%;
+  width: 310px;
   display: inline !important;
+  height: 38px;
 }
 
 .maintain-llc-map {
@@ -296,6 +300,10 @@ $path: "/public/images/";
   z-index: 100000;
 }
 
-.hidden-link {
-  display: none;
+.hide-this {
+  display: none !important;
+}
+
+.edit-charge-details input[type="text"] {
+  width: 100%;
 }

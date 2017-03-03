@@ -5,7 +5,9 @@ Search for a charge or browse for a charge on the map
 {% endblock %}
 
 {% block content %}
-
+<script>
+var maintainMapAddressSelected = sessionStorage.getItem("maintainMapAddress")
+</script>
 <main id="content" role="main">
 	<!-- alpha banner -->
 	<div class="phase-banner">
@@ -14,7 +16,7 @@ Search for a charge or browse for a charge on the map
 	<!-- main content starts -->
 	<div class="grid-row">
 		<div class="column-full">
-			<h1 class="heading-large">Search results for {{ searchedItem }}</h1>
+			<h1 class="heading-large">Search results for <span class="maintainMapAddressItem"></span></h1>
       <form action="#" method="GET">
         <div class="form-group">
           <fieldset>
@@ -22,7 +24,7 @@ Search for a charge or browse for a charge on the map
             <div class="form-group spacing-bottom-half">
               <label class="form-label" for="legislation">Search again
               </label>
-              <input class="form-control search-field" id="maintain-map-search" name="maintain-map-search" type="text" value="" autofocus="autofocus">
+              <input class="form-control search-field maintain-searched" id="maintain-map-search" name="maintain-map-search" type="text">
               <input class="search-button submit maintain-map-search-button" type="submit" name="maintain-map-search" value=""><br><br>
             </div>
           </fieldset>
@@ -170,7 +172,7 @@ Search for a charge or browse for a charge on the map
         <h2 class="heading-medium">Local Land Charges in this area</h2>
         <p class="result-count">There are 2 charges in this area</p>
         <div class="charge-list-item">
-        <a href="specific-financial">
+          <a href="specific-financial">
             <h3 class="heading-small">Specific financial</h3>
             <p class="font-xsmall"><span class="bold-xsmall">ID:</span> LR-ABC12345</p>
           </a>
@@ -186,6 +188,7 @@ Search for a charge or browse for a charge on the map
   </div>
 </main>
 <script>
+
 // map stuff
 var geoserver = 'http://192.168.250.122:8080/geoserver'
 var longitude = -0.09;

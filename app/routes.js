@@ -7,9 +7,15 @@ router.get('/', function (req, res) {
 })
 
 // add your routes here
-/*router.get('/add_charge/v1/map', function (req, res) {
-  var searchedItem = req.query.search_term
-  res.render('add_charge/v1/map', { 'searchedItem': searchedItem })
-})*/
+router.get('/maintain-llc/v1/cancel-confirmation', function (req, res) {
+  
+  var cancel = req.query.cancelYes
 
+  if (cancel === 'True') {
+    // redirect to the relevant page
+    res.redirect('/maintain-llc/v1/specific-financial')
+  } else {
+    res.render('maintain-llc/v1/cancel-confirmation')
+  }
+})
 module.exports = router

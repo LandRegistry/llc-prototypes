@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-View charge details
+Confirm your changes
 {% endblock %}
 
 {% block content %}
@@ -17,6 +17,7 @@ View charge details
 			<p><a href="map-results">Back to search results</a></p>
 			<h1 class="heading-large">Charge ID LR-ABC12345</h1>
 			<img src="{{ asset_path }}images/address_1.png" width="100%" height="auto">
+			<p class="text">Please check below that your changes are correct.</p>
 			<table class="charge-details">
 
 				<thead>
@@ -218,7 +219,7 @@ View charge details
 					</tbody>
 				</table>
 				<br><br>
-				<p><a href="cancel-check">Cancel this charge</a></p>
+				<p><a href="confirmation-page" class="button">Confirm</a></p>
 			</div>
 		</div>
 	</main>
