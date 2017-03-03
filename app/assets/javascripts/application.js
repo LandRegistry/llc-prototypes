@@ -164,6 +164,8 @@ $(document).ready(function () {
   $(".amount").html(amountSelected)
   $(".interest").html(interestSelected)
 
+
+
   // map stuff
   var geoserver = 'http://192.168.250.122:8080/geoserver'
   var longitude = -0.09;
