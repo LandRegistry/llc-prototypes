@@ -33,6 +33,12 @@ $(document).ready(function () {
     return false
   });
 
+  $(".maintain-control li").click(function() {
+    var charge = $(this).html().toLowerCase()
+    $(".maintain-result").load("lists/" + charge)
+    return false
+  });
+
   // sessionstorage stuff
 
   // legislation

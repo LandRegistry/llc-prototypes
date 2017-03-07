@@ -32,7 +32,9 @@ $path: "/public/images/";
 // Horizontal carousel styles
 .browse ul li,
 .control ul li,
-.result ul li a {
+.result ul li a,
+.maintain-control ul li,
+.maintain-result ul li {
   color: #005ea5;
   text-decoration: none;
   line-height: 1.5;
@@ -41,7 +43,8 @@ $path: "/public/images/";
   cursor: pointer;
 }
 
-.control ul li::after {
+.control ul li::after,
+.maintain-control ul li::after {
   position: relative;
   top: 50%;
   margin-top: -2px;
@@ -53,7 +56,9 @@ $path: "/public/images/";
 
 .control ul li:hover,
 .result ul li a:hover,
-.browse ul li:hover {
+.browse ul li:hover,
+.maintain-control ul li:hover,
+.maintain-result ul li:hover {
   background: #F8F8F8;
 }
 
