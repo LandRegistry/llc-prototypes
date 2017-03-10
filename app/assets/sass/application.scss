@@ -290,8 +290,8 @@ $path: "/public/images/";
   }
 
   & a {
-    color: inherit;
     cursor: pointer;
+    text-decoration: underline;
     display: block;
 
     &:hover {
@@ -311,4 +311,16 @@ $path: "/public/images/";
 
 .edit-charge-details input[type="text"] {
   width: 100%;
+}
+
+.charge-list-options {
+  padding-bottom: 0.5em;
+}
+
+.charge-list-options a {
+  display: inline;
+
+  &:last-child {
+    margin-left: 2em;
+  }
 }

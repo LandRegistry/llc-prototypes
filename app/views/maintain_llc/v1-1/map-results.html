@@ -6,7 +6,7 @@ Search for a charge or browse for a charge on the map
 
 {% block content %}
 <script>
-var maintainMapAddressSelected = sessionStorage.getItem("maintainMapAddress")
+  var maintainMapAddressSelected = sessionStorage.getItem("maintainMapAddress")
 </script>
 <main id="content" role="main">
 	<!-- alpha banner -->
@@ -172,16 +172,20 @@ var maintainMapAddressSelected = sessionStorage.getItem("maintainMapAddress")
         <h2 class="heading-medium">Local Land Charges in this area</h2>
         <p class="result-count">There are 2 charges in this area</p>
         <div class="charge-list-item">
-          <a href="specific-financial">
-            <h3 class="heading-small">Specific financial</h3>
-            <p class="font-xsmall"><span class="bold-xsmall">ID:</span> LR-ABC12345</p>
-          </a>
+          <h3 class="heading-small">Specific financial</h3>
+          <p class="font-xsmall"><span class="bold-xsmall">ID:</span> LR-ABC12345</p>
+          <div class="charge-list-options">
+            <a href="#">View</a>
+            <a href="#">Edit</a>
+          </div>
         </div>
         <div class="charge-list-item">
-          <a href="infrastructure">
-            <h3 class="heading-small">Infrastructure</h3>
-            <p class="font-xsmall"><span class="bold-xsmall">ID:</span> LR-DEF67890</p>
-          </a>
+          <h3 class="heading-small">Infrastructure</h3>
+          <p class="font-xsmall"><span class="bold-xsmall">ID:</span> LR-DEF67890</p>
+          <div class="charge-list-options">
+            <a href="#">View</a>
+            <a href="#">Edit</a>
+          </div>
         </div>
       </div>
     </div>
