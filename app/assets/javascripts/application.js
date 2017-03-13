@@ -160,7 +160,7 @@ $(document).ready(function () {
   })
 
 
-
+/*
   // edit charge
   $(".edit-charge").click(function() {
     var editChargeType = $("#charge-type-text").html()
@@ -180,7 +180,7 @@ $(document).ready(function () {
     var editAmount = $("#amount-text").html()
     var editInterest = $("#interest-text").html()*/
 
-    sessionStorage.setItem("editChargeType", editChargeType)
+    /*sessionStorage.setItem("editChargeType", editChargeType)
     sessionStorage.setItem("editLegislation", editLegislation)
     sessionStorage.setItem("editLocation", editLocation)
     sessionStorage.setItem("editLocationInformation", editLocationInformation)
@@ -196,7 +196,7 @@ $(document).ready(function () {
     sessionStorage.setItem("editCompensation", editCompensation)
     sessionStorage.setItem("editAmount", editAmount)
     sessionStorage.setItem("editInterest", editInterest)*/
-  })
+  /*})
 
   $("#edit-charge-type-field").val(editChargeTypeValue)
   $("#edit-legislation-field").val(editLegislationValue)
@@ -244,7 +244,7 @@ $(document).ready(function () {
 
  
 
-
+/*
   $(".maintainMapAddressItem").html(maintainMapAddressSelected)
   // map stuff
   var geoserver = 'http://192.168.250.122:8080/geoserver'
@@ -659,7 +659,7 @@ function initmap() {
  * JSONP WFS callback function.
  * @param {Object} response The response object.
  */
- window.loadFeatures = function(data) {
+ /*window.loadFeatures = function(data) {
   wfsSource.addFeatures((new ol.format.GeoJSON()).readFeatures(data))
 };
 
@@ -915,4 +915,4 @@ function panTo(x, y){
       }
     }
   }
-})
+})*/
