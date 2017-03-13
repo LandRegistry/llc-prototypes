@@ -244,7 +244,7 @@ $(document).ready(function () {
 
  
 
-/*
+
   $(".maintainMapAddressItem").html(maintainMapAddressSelected)
   // map stuff
   var geoserver = 'http://192.168.250.122:8080/geoserver'
@@ -659,7 +659,7 @@ function initmap() {
  * JSONP WFS callback function.
  * @param {Object} response The response object.
  */
- /*window.loadFeatures = function(data) {
+ window.loadFeatures = function(data) {
   wfsSource.addFeatures((new ol.format.GeoJSON()).readFeatures(data))
 };
 
@@ -915,4 +915,4 @@ function panTo(x, y){
       }
     }
   }
-})*/
+})
