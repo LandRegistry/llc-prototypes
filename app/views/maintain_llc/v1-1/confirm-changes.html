@@ -48,7 +48,7 @@ Confirm your changes
 							</a>
 						</td>
 					</tr>
-					<tr class="toHighlight">
+					<tr id="legislationRow">
 						<td>
 							Legislation
 						</td>
@@ -56,7 +56,7 @@ Confirm your changes
 							<span id="legislation-text">s.107 Building Act 1984</span>
 						</td>
 						<td class="change-answer">
-							<a class="edit-charge" id="edit-legislation" href="edit-specific-financial">
+							<a class="edit-charge" id="edit-legislation" href="edit-charge-type">
 								Change <span class="visuallyhidden">Legislation</span>
 							</a>
 						</td>
@@ -230,8 +230,14 @@ Confirm your changes
 	</main>
 	<script>
 		var toHighlight = sessionStorage.getItem("newLegislation")
-		document.getElementById("legislation-text").innerHTML = toHighlight
-		console.log(toHighlight)
+		var changeChecked = sessionStorage.getItem("changeCheck")
+		var test = document.getElementById("legislation-text")
+		test.innerHTML = toHighlight
+		console.log(changeChecked)
+
+		if(changeChecked === "legislation changed") {
+			document.getElementById("legislationRow").className += " toHighlight"
+		}
 	</script>
 
 	{% endblock %}

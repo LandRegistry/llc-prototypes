@@ -30,6 +30,8 @@ $(document).ready(function () {
   $("#confirm-new-legislation").click(function() {
     var newLegislation = $("#new-legislation").val()
     sessionStorage.setItem("newLegislation", newLegislation)
+    var changeCheck = "legislation changed"
+    sessionStorage.setItem("changeCheck", changeCheck)
   })
 
   // horizontal carousel script
