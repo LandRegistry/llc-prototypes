@@ -26,10 +26,10 @@ Edit charge type and legislation
 									<h2 class="heading-medium">New legislation</h2>
 								</label>
 								<span class="form-hint">Start typing the legislation you are looking for and select it from the list</span>
-								<input class="form-control search-field" id="legislation" name="legislation" type="text" value="" autofocus="autofocus">
+								<input class="form-control search-field" id="new-legislation" name="new-legislation" type="text" value="" autofocus="autofocus">
 							</div>
 						</fieldset>
-						<a href="confirm-changes" class="button">Continue</a>
+						<a href="confirm-changes" class="button confirm-new-legislation">Continue</a>
 					</div>
 				</form>
 			</div>
@@ -61,7 +61,7 @@ Edit charge type and legislation
 		"s.11(1) Opencast Coal Act 1958",
 		"No specific statutory provision"
 		]
-		$( "#legislation" ).autocomplete({
+		$( "#new-legislation" ).autocomplete({
 			source: legislationList
 		})
 	})

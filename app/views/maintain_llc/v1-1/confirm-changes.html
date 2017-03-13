@@ -35,7 +35,7 @@ Confirm your changes
 				</thead>
 
 				<tbody>
-					<tr>
+					<tr class="toHighlight">
 						<td>
 							Charge type
 						</td>
@@ -229,7 +229,8 @@ Confirm your changes
 		</div>
 	</main>
 	<script>
-
+		var toHighlight = sessionStorage.getItem("checked")
+		console.log(toHighlight)
 	</script>
 
 	{% endblock %}

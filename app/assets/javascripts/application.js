@@ -235,6 +235,8 @@ $(document).ready(function () {
   $(".interest").html(interestSelected)
 
 
+
+
   $(".maintainMapAddressItem").html(maintainMapAddressSelected)
   // map stuff
   var geoserver = 'http://192.168.250.122:8080/geoserver'
