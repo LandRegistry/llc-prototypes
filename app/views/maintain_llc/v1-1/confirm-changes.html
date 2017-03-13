@@ -35,7 +35,7 @@ Confirm your changes
 				</thead>
 
 				<tbody>
-					<tr class="toHighlight">
+					<tr>
 						<td>
 							Charge type
 						</td>
@@ -48,7 +48,7 @@ Confirm your changes
 							</a>
 						</td>
 					</tr>
-					<tr>
+					<tr class="toHighlight">
 						<td>
 							Legislation
 						</td>
@@ -229,7 +229,8 @@ Confirm your changes
 		</div>
 	</main>
 	<script>
-		var toHighlight = sessionStorage.getItem("checked")
+		var toHighlight = sessionStorage.getItem("newLegislation")
+		document.getElementById("legislation-text").innerHTML = toHighlight
 		console.log(toHighlight)
 	</script>
 

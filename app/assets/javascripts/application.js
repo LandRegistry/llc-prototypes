@@ -26,6 +26,12 @@ $(document).ready(function () {
   var showHideContent = new GOVUK.ShowHideContent()
   showHideContent.init()
 
+   // maintain_llc v1.1
+  $("#confirm-new-legislation").click(function() {
+    var newLegislation = $("#new-legislation").val()
+    sessionStorage.setItem("newLegislation", newLegislation)
+  })
+
   // horizontal carousel script
   $(".control li").click(function() {
     var charge = $(this).html().toLowerCase()
@@ -234,7 +240,7 @@ $(document).ready(function () {
   $(".amount").html(amountSelected)
   $(".interest").html(interestSelected)
 
-
+ 
 
 
   $(".maintainMapAddressItem").html(maintainMapAddressSelected)
