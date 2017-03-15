@@ -15,7 +15,7 @@ Find where your charge is
 	<div class="grid-row">
 		<div class="column-full">
 			<h1 class="heading-xlarge">
-				Search results for {{ searchedItem }}
+				Search results for <span class="location"></span>
 			</h1>
 			<p>The extent of the charge you searched for is shown on the map. Use the map tools to adjust the extent.</p>
 			<div>
@@ -85,7 +85,7 @@ Find where your charge is
 						<div id="ol-tool-tip" class="ol-control">Click to draw a point.</div>
 
 						<form onsubmit="lookupPostcode();return false">
-							<div id="postcode-search" class="form-inline postcode-search">
+							<!--div id="postcode-search" class="form-inline postcode-search">
 								<div class="input-group">
 									<input type="text" id="postcode" class="form-control" placeholder="Postcode">
 									<span class="input-group-btn">
@@ -93,7 +93,7 @@ Find where your charge is
 									</span>
 								</div>
 								<div id="postcode-error"></div>
-							</div>
+							</div> -->
 						</form>
 					</div>
 
@@ -119,6 +119,9 @@ Find where your charge is
 	</div>
 </main>
 <script>
+
+var locationSelected = sessionStorage.getItem("location")
+
 // map stuff
   var geoserver = 'http://192.168.250.122:8080/geoserver'
   var longitude = -0.09;

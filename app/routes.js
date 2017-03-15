@@ -7,7 +7,7 @@ router.get('/', function (req, res) {
 })
 
 // add your routes here
-router.get('/maintain-llc/v1/cancel-confirmation', function (req, res) {
+/*router.get('/maintain-llc/v1/cancel-confirmation', function (req, res) {
   
   var cancel = req.query.cancelYes
 
@@ -17,5 +17,5 @@ router.get('/maintain-llc/v1/cancel-confirmation', function (req, res) {
   } else {
     res.render('maintain-llc/v1/cancel-confirmation')
   }
-})
+})*/
 module.exports = router
